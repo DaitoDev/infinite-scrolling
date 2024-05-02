@@ -1,0 +1,77 @@
+// SASS VARIABLES
+@import './variables';
+@import './mixins';
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-width: 320px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+}
+
+.container{
+   text-align: center;
+
+    h1{
+        letter-spacing: 3px;
+        margin: 25px 0 15px;
+        font-size: 28px;
+    }
+
+    .loader{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff8;
+
+        img{
+            position: fixed;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .img-container{
+        margin: 5px 30%;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+// Media query actions for response on smaller screens 
+// @media screen and (max-width: 820px) {
+//     .container{
+//         h1{
+//             font-size: 19px;
+//         }
+//         .img-container{
+//             margin: 5px 25%;
+//         }
+//     }
+   
+// }
+
+@media screen and (max-width: 600px)  {
+    .container {
+        h1{
+            font-size: 13px;
+        }
+        .img-container{
+            margin: 5px;
+        }
+    }
+}

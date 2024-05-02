@@ -1,0 +1,13 @@
+@mixin flexBox($direction){
+    display: flex;
+    justify-content: $direction;
+}
+
+
+
+// example use:
+// @import './variables';
+// .box{
+//     @inludes flexbox('center')
+// }
+
